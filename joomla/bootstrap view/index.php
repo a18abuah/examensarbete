@@ -135,15 +135,105 @@
         </button>
 
     </div>
+    <h3> Mest sökta <br> böcker</h3>
+    <ol class="list-group">
 
+
+       
+        <div class="hejhej">
+
+
+
+            <ul class="latestnews mod-list">
+                <li class="latestnews1">
+                    <div class="produkt1">
+                        <div class="ind"> 1 </div>
+                        <div class="img1">
+                            <a href="http://localhost/joomla3.9/index.php/component/j2store/products/book2om"><img src="http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg"></a>
+                        </div>
+
+                        <div class="info1">
+                            <h3 style="text-decoration:underline;">book1 </h3>
+                            <h5> dsada </h5>
+                            <p> 800kr </p>
+                        </div>
+
+
+
+                    </div>
+
+                </li>
+
+                <li class="latestnews1">
+                    <div class="produkt1">
+                        <div class="ind"> 1 </div>
+                        <div class="img1">
+                            <a href="http://localhost/joomla3.9/index.php/component/j2store/products/book2om"><img src="http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg"></a>
+                        </div>
+
+                        <div class="info1">
+                            <h3 style="text-decoration:underline;">book1 </h3>
+                            <h5> dsada </h5>
+                            <p> 800kr </p>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="latestnews1">
+                    <div class="produkt1">
+                        <div class="ind"> 1 </div>
+                        <div class="img1">
+                            <a href="http://localhost/joomla3.9/index.php/component/j2store/products/book2om"><img src="http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg"></a>
+                        </div>
+
+                        <div class="info1">
+                            <h3 style="text-decoration:underline;">book1 </h3>
+                            <h5> dsada </h5>
+                            <p> 800kr </p>
+                        </div>
+
+
+
+                    </div>
+                </li>
+                <li class="latestnews1">
+                    <div class="produkt1">
+                        <div class="ind"> 1 </div>
+                        <div class="img1">
+                            <a href="http://localhost/joomla3.9/index.php/component/j2store/products/book2om"><img src="http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg"></a>
+                        </div>
+
+                        <div class="info1">
+                            <h3 style="text-decoration:underline;">book1 </h3>
+                            <h5> dsada </h5>
+                            <p> 800kr </p>
+                        </div>
+
+
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+       
+
+
+
+
+    </ol>
 
     <div class="container">
 
         <div id="row">
+            <?php if ($this->countModules('block1')): ?>
+            <jdoc:include type="modules" name="block1" style="none" />
+            <?php endif ?>
+            
+            
 
-            
-            
-/**\
     </div>
  </div>
     <footer class="bg-dark text-center text-white position-relative">
