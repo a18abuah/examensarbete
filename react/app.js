@@ -261,7 +261,349 @@ window.onload = function()
         }
     }
 
-   
+    const data1 = [
+      {
+        name: "Purrsloud",
+        id: "Purrsloud1",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        kr: "250kr"
+      },
+      {
+        name: "Barksalot",
+        id: "Barksalot1",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        kr: "150kr"
+      },
+      {
+        name: "Meowsalot",
+        id: "Meowsalot1",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+        kr: "500kr"
+      },
+      {
+        name: "Meowsalotes",
+        id: "Meowsalotes1",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+        kr: "500kr"
+      },
+      {
+        name: "Meowsalot",
+        id: "Meowsalotz1",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+        kr: "500kr"
+      },
+      {
+        name: "Meowsalot",
+        id: "Meowsalotz1ed",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+        kr: "500kr"
+      },
+      {
+        name: "Meowsalot",
+        id: "Meowsalotz1ed12",
+        href: "file:///C:/Users/asayi/react/index2.html",
+        img: "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+        kr: "500kr"
+      }
+      
+    ];
+
+    document.getElementById("container1").innerHTML = `
+    ${data1.map(function (dat) { 
+      
+
+    return ` `;
+}).join('')}
+                
+         `
+
+
+         
+         
+    class products1 extends React.Component
+    {     
+        render()
+        {
+          
+          return  document.getElementById("container1").innerHTML =  
+          
+          
+          `
+          
+          ${data1.map(function (dat) {     
+              
+
+            
+
+
+          return ` <div id="row">
+              <div itemscope itemtype="https://schema.org/ItemList" class="j2store-product-module j2store-product-module-list">
+                  <div class="j2store-module-product-row row-0 row-fluid">
+                      <div itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="${dat.name}">
+                          <meta itemprop="position" content="1" />
+                          <div itemprop="item" itemscope="" itemtype="http://schema.org/Product" class="j2store product-7 j2store-module-product">
+                              <!-- product image if postion is top -->
+                              <div class="j2store-product-image   span12 ">
+                                  <a href="/joomla3.9/index.php/shopping/book1" title="book1">
+                                      <img itemprop="image" alt="book1" class="j2store-img-responsive j2store-product-image-7" 
+                                          src="${dat.img}" width="80" height="80" />
+  
+                                  </a>
+                              </div>
+                              
+                              <h4 itemprop="name" class="product-title">
+                                  <a  itemprop="url" class="status" id="${dat.id}" value="${dat.id}" ;
+                                      href=""   title="book1">
+  
+                                      ${dat.name} </a>
+                              </h4>
+                              <div class="product-cart-section  span12">
+                                  <div class="product-cart-left-block  span12">
+                                      <!-- Product price block-->
+                                      <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+  
+                                          <div class="sale-price">
+                                             ${dat.kr} </div>
+                                          <div class="tax-text">
+                                          </div>
+                                          <meta itemprop="price" content="0.00000" />
+                                          <meta itemprop="priceCurrency" content="USD" />
+                                          <link itemprop="availability" href="https://schema.org/InStock" />
+                                      </div>
+                                      <div class="product_cart_block">
+                                          <form action="/joomla3.9/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-7" name="j2store-addtocart-form-7" data-product_id="7" data-product_type="simple" enctype="multipart/form-data">
+                                              <div class="cart-action-complete" style="display:none;">
+                                                  <p class="text-success">
+                                                      Item added to cart. <a href="/joomla3.9/index.php/component/j2store/carts" class="j2store-checkout-link">
+                                                          Checkout </a>
+                                                  </p>
+                                              </div>
+                                              <div id="add-to-cart-7" class="j2store-add-to-cart">
+                                                  <div class="product-qty">
+                                                      <input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+                                                  </div>
+                                                  <input type="hidden" name="product_id" value="7" />
+                                                  <input data-cart-action-always="Adding..." data-cart-action-done="Add to cart" data-cart-action-timeout="1000" value="Add to cart" type="submit" class="j2store-cart-button btn btn-primary" />
+                                              </div>
+                                              <input type="hidden" name="option" value="com_j2store" />
+                                              <input type="hidden" name="view" value="carts" />
+                                              <input type="hidden" name="task" value="addItem" />
+                                              <input type="hidden" name="ajax" value="0" />
+                                              <input type="hidden" name="f9dcccba7895aa8628dd4cd015ae43c7" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2xvY2FsaG9zdC9qb29tbGEzLjkv" />
+                                              <div class="j2store-notifications"></div>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div> 
+                              <div class="product-short-description"></div>
+
+                          </div> 
+                      </div> 
+
+                  </div>
+              </div>
+          </div>
+                      `;
+                      function reply_click(clicked_id)
+                      {
+                          console.log(clicked_id);
+                      };
+                      
+    }).join('')}
+                      
+               `;
+    }
+
+  }
+  class produktview extends React.Component
+  {
+      render()
+      {
+        return  document.getElementById("container1").innerHTML = `
+        ${data1.map(function (dat) {
+        return `     <div id="${dat.name}">
+  <div class="container">
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header-inner clearfix">
+        <a class="brand pull-left" href="/joomla3.9/">
+          <span class="site-title" title="E-commerce">E-commerce</span>											</a>
+        <div class="header-search pull-right">
+          
+        </div>
+      </div>
+    </header>
+          
+    <div class="row-fluid">
+              <main id="content" role="main" class="span9">
+                  <div itemprop="articleBody"></div>
+        <!-- Begin Content -->
+        
+        <div id="system-message-container">
+</div>
+
+        <div id="akeeba-renderjoomla">
+<div class="j2store-single-product simple detail bs2 ">
+    <div itemscope itemtype="https://schema.org/Product" class="product-13 simple-product">
+<div class="row-fluid">
+  <div class="span6">
+        <div class="j2store-mainimage">
+                          
+          <span class="zoom" id="j2store-item-main-image-13">
+       <img itemprop="image"
+                alt="book6"
+                title="book6"
+                class="j2store-product-main-image j2store-img-responsive"
+                src="${dat.img}"
+                width="200"
+           />
+       </span>
+
+          </div>
+
+
+  
+
+  </div>
+
+  <div class="span6">
+    
+<h1 itemprop="name" class="product-title">
+  book6	</h1>
+
+                  
+    <div class="price-sku-brand-container row-fluid">
+      <div class="span6">
+      
+<div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="product-price-container">
+  
+          <div class="sale-price">							
+          ${dat.kr}				
+  </div>
+  
+    
+<meta itemprop="price" content="50.00" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+  <div class="discount-percentage">
+          </div>
+      </div>
+
+      <div class="span6">
+                                    <div class="product-sku">
+  <span class="sku-text">SKU:</span>
+  <span itemprop="sku" class="sku"> book6 </span>
+</div>
+        
+                </div>
+    </div>
+
+    
+    <form action="/joomla3.9/index.php/component/j2store/carts/addItem?Itemid=170"
+        method="post" class="j2store-addtocart-form"
+        id="j2store-addtocart-form-13"
+        name="j2store-addtocart-form-13"
+        data-product_id="13"
+        data-product_type="simple"
+        enctype="multipart/form-data">
+
+      
+              <div class="cart-action-complete" style="display:none;">
+      <p class="text-success">
+        Item added to cart.												<a href="/joomla3.9/index.php/component/j2store/carts?Itemid=170" class="j2store-checkout-link">
+                    Checkout					</a>
+      </p>
+  </div>
+
+
+
+  <div id="add-to-cart-13" class="j2store-add-to-cart">
+  
+  <div class="product-qty"><input type="number" name="product_qty" value="1" class="input-mini form-control " min="0" step="1" /></div>
+    <input type="hidden" id="j2store_product_id" name="product_id" value="13" />
+
+      <input
+        data-cart-action-always="Adding..."
+        data-cart-action-done="Add to cart"
+        data-cart-action-timeout="1000"
+         value="Add to cart"
+         type="submit"
+         class="j2store-cart-button btn btn-primary"
+         />
+   </div>
+
+
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="f35c7028a9eadd904bd984664507088a" value="1" />	<input type="hidden" name="return" value="aHR0cDovL2xvY2FsaG9zdC9qb29tbGEzLjkvaW5kZXgucGhwL3Nob3BwaW5nL2Jvb2s2" />
+<div class="j2store-notifications"></div>
+
+    </form>
+        </div>
+</div>
+
+      <div class="row-fluid">
+  <div class="span12">
+    <ul class="nav nav-tabs" id="j2store-product-detail-tab">
+                <li class="active"><a href="#description" data-toggle="tab">Description</a>
+      
+            </ul>
+
+    <div class="tab-content">
+              <div itemprop="description" class="tab-pane fade in active" id="description">
+        
+<div class="product-sdesc">
+  
+<p><strong>${dat.description}	</strong></p>	</div>
+
+        
+<div class="product-ldesc">
+    </div>
+
+      </div>
+      
+            </div>
+  </div>
+</div>		
+
+      </div>	
+
+
+
+  </div>
+
+</div>
+
+        <div class="clearfix"></div>
+        
+        <!-- End Content -->
+      </main>
+                <div id="aside" class="span3">
+          <!-- Begin Right Sidebar -->
+          
+          <!-- End Right Sidebar -->
+        </div>
+            </div>
+  </div>
+  </div>
+                    `;
+  }).join('')}
+                    
+             `;
+  }
+
+}
     
 
     ReactDOM.render(
@@ -292,7 +634,13 @@ window.onload = function()
         document.getElementById('sidebar')
         
     );
+    ReactDOM.render(
+       
 
+      React.createElement(products1,),
+      document.getElementById('container1')
+      
+  );
 
 
   
