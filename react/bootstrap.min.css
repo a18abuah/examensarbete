@@ -77,6 +77,7 @@ div[itemprop="itemListElement"]{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
     
 }
 .j2store product-9{
@@ -5269,6 +5270,12 @@ textarea.form-control-lg {
   display: none;
 }
 
+.productview>div {
+  display: none;
+  }
+ .hide{
+   display: none;
+ }
 .toast-container {
   width: -webkit-max-content;
   width: -moz-max-content;
