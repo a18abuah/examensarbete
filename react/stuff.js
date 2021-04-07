@@ -102,91 +102,91 @@ window.onload = function()
 
     const data1 = [
       {
-        name: "Purrsloud",
+        name: "book1",
         id: "id1",
         idprodukt: "id1",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "250kr"
       },
       {
-        name: "Barksalot",
+        name: "book2",
         id: "id2",
         idprodukt: "id2",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "150kr"
       },
       {
-        name: "Meowsalot",
+        name: "book3",
         id: "id3",
         idprodukt: "id3",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "https://learnwebcode.github.io/json-example/images/cat-1.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalotes",
+        name: "book4",
         id: "id4",
         idprodukt: "id4",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book5",
         id: "id5",
         idprodukt: "id5",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book6",
         id: "id6",
         idprodukt: "id6",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book7",
         id: "id7",
         idprodukt: "id7",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book8",
         id: "id8",
         idprodukt: "id8",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book9",
         id: "id9",
         idprodukt: "id9",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book10",
         id: "id10",
         idprodukt: "id10",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       },
       {
-        name: "Meowsalot",
+        name: "book11",
         id: "id11",
         idprodukt: "id11i",
         href: "file:///C:/Users/asayi/react/index2.html",
-        img: "http://localhost/joomla3.9/templates/testing/bilder/navbarbild.jpg",
+        img: "paolo.jpg",
         kr: "500kr"
       }
       
