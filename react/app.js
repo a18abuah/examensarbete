@@ -5,21 +5,23 @@ window.onload = function()
 
 {
   
+  
  
- 
-    
-    class Greetings extends React.Component
-    {
-        render()
-        {
-            return React.createElement('h1', null, 'Greetings, ' + this.props.name + '!');
-        }
-    }
+
+  
+
+
     class navbar extends React.Component
     {
+
+ 
+
+
+      
         render()
         {
-           
+          console.log("hejhabfea123");
+          console.warn("will mount");
             return React.createElement("header", {
                 className: "p-3 bg-dark text-white"
               }, React.createElement("div", {
@@ -41,7 +43,8 @@ window.onload = function()
               }, React.createElement("button", {
                 type: "button",
                 id: "loginknapp",
-               
+               href: "#",
+               onClick: console.log("hej"),
                 className: "btn btn-outline-light me-2"
               }, "Login"), React.createElement("button", {
                 type: "button",
@@ -53,20 +56,7 @@ window.onload = function()
             
         }
     }
-    class produkter extends React.Component
-    {
-        render()
-        {
-           
-            return React.createElement("div", {
-              class: "container"
-            }, React.createElement("div", {
-              id: "container"
-            }, " "), " ");
-              
-            
-        }
-    }
+
     
     class carousell extends React.Component
     {
@@ -351,7 +341,7 @@ window.onload = function()
       {
         name: "book11",
         id: "id11",
-        idprodukt: "id11i",
+        idprodukt: "id11",
         href: "file:///C:/Users/asayi/react/index2.html",
         img: "paolo.jpg",
         kr: "500kr"
@@ -364,218 +354,12 @@ window.onload = function()
 
 
 
-
-
-    class produktview extends React.Component
-    {
-        render()
-        {
-          return React.createElement("div", {
-            className: "productview",
-            id: "productview"
-          }, data1.map((dat, key) => {
-
-
-
-            
-            
-
-
-            return React.createElement("div", {
-              key: key,
-              className: dat.name,
-              id: dat.idprodukt
-            }, React.createElement("div", {
-              id: "${dat.name}"
-            }, React.createElement("div", {
-              className: "container"
-            }, React.createElement("header", {
-              className: "header",
-              role: "banner"
-            }, React.createElement("div", {
-              className: "header-inner clearfix"
-            }, React.createElement("a", {
-              className: "brand pull-left",
-              href: "/joomla3.9/"
-            }, React.createElement("span", {
-              className: "site-title",
-              title: "E-commerce",
-              href:  " "
-            }, "E-commerce"), "           "), React.createElement("div", {
-              className: "header-search pull-right"
-            }))), React.createElement("div", {
-              className: "row-fluid"
-            }, React.createElement("main", {
-              id: "content",
-              role: "main",
-              className: "span9"
-            }, React.createElement("div", {
-              itemProp: "articleBody"
-            }), React.createElement("div", {
-              id: "system-message-container"
-            }), React.createElement("div", {
-              id: "akeeba-renderjoomla"
-            }, React.createElement("div", {
-              className: "j2store-single-product simple detail bs2 ",
-              id: dat.idprodukt
-            }, React.createElement("div", {
-              itemScope: true,
-              itemType: "https://schema.org/Product",
-              className: "product-13 simple-product"
-            }, React.createElement("div", {
-              className: "row-fluid"
-            }, React.createElement("div", {
-              className: "span6"
-            }, React.createElement("div", {
-              className: "j2store-mainimage"
-            }, React.createElement("span", {
-              className: "zoom",
-              id: "j2store-item-main-image-13"
-            }, React.createElement("img", {
-              itemProp: "image",
-              alt: "book6",
-              title: "book6",
-              className: "j2store-product-main-image j2store-img-responsive",
-              src: dat.img,
-              width: "200"
-            })))), React.createElement("div", {
-              className: "span6"
-            }, React.createElement("h1", {
-              itemProp: "name",
-              className: "product-title"
-            }, "book6 "), React.createElement("div", {
-              className: "price-sku-brand-container row-fluid"
-            }, React.createElement("div", {
-              className: "span6"
-            }, React.createElement("div", {
-              itemProp: "offers",
-              itemScope: true,
-              itemType: "https://schema.org/Offer",
-              className: "product-price-container"
-            }, React.createElement("div", {
-              className: "sale-price"
-            }, "$", dat.kr), React.createElement("meta", {
-              itemProp: "price",
-              content: "50.00"
-            }), React.createElement("meta", {
-              itemProp: "priceCurrency",
-              content: "USD"
-            }), React.createElement("link", {
-              itemProp: "availability",
-              href: "https://schema.org/InStock"
-            })), React.createElement("div", {
-              className: "discount-percentage"
-            })), React.createElement("div", {
-              className: "span6"
-            }, React.createElement("div", {
-              className: "product-sku"
-            }, React.createElement("span", {
-              className: "sku-text"
-            }, "SKU:"), React.createElement("span", {
-              itemProp: "sku",
-              className: "sku"
-            }, " book6 ")))), React.createElement("form", {
-              action: "/joomla3.9/index.php/component/j2store/carts/addItem?Itemid=170",
-              method: "post",
-              className: "j2store-addtocart-form",
-              id: "j2store-addtocart-form-13",
-              name: "j2store-addtocart-form-13",
-              "data-product_id": "13",
-              "data-product_type": "simple",
-              encType: "multipart/form-data"
-            }, React.createElement("div", {
-              className: "cart-action-complete",
-            
-            }, React.createElement("p", {
-              className: "text-success"
-            }, "Item added to cart.            ", React.createElement("a", {
-              href: "/joomla3.9/index.php/component/j2store/carts?Itemid=170",
-              className: "j2store-checkout-link"
-            }, "Checkout     "))), React.createElement("div", {
-              id: "add-to-cart-13",
-              className: "j2store-add-to-cart"
-            }, React.createElement("div", {
-              className: "product-qty"
-            }, React.createElement("input", {
-              type: "number",
-              name: "product_qty",
-              value: "1",
-              className: "input-mini form-control ",
-              min: "0",
-              step: "1"
-            })), React.createElement("input", {
-              type: "hidden",
-              id: "j2store_product_id",
-              name: "product_id",
-            
-            }), React.createElement("input", {
-              "data-cart-action-always": "Adding...",
-              "data-cart-action-done": "Add to cart",
-              "data-cart-action-timeout": "1000",
-             
-              type: "submit",
-              className: "j2store-cart-button btn btn-primary"
-            })), React.createElement("input", {
-              type: "hidden",
-              name: "option",
-            
-            }), React.createElement("input", {
-              type: "hidden",
-              name: "view",
-             
-            }), React.createElement("input", {
-              type: "hidden",
-              name: "task",
-          
-            }), React.createElement("input", {
-              type: "hidden",
-              name: "ajax",
-            
-            }), React.createElement("input", {
-              type: "hidden",
-              name: "f35c7028a9eadd904bd984664507088a",
-           
-            }), " ", React.createElement("input", {
-              type: "hidden",
-              name: "return",
-            
-            }), React.createElement("div", {
-              className: "j2store-notifications"
-            })))), React.createElement("div", {
-              className: "row-fluid"
-            }, React.createElement("div", {
-              className: "span12"
-            }, React.createElement("ul", {
-              className: "nav nav-tabs",
-              id: "j2store-product-detail-tab"
-            }, React.createElement("li", {
-              className: "active"
-            }, React.createElement("a", {
-              href: "#description",
-              "data-toggle": "tab"
-            }, "Description"))), React.createElement("div", {
-              className: "tab-content"
-            }, React.createElement("div", {
-              itemProp: "description",
-              className: "tab-pane fade in active",
-              id: "description"
-            }, React.createElement("div", {
-              className: "product-sdesc"
-            }, React.createElement("p", null, React.createElement("strong", null, "$", dat.description, " ")), " "), React.createElement("div", {
-              className: "product-ldesc"
-            })))))))), React.createElement("div", {
-              className: "clearfix"
-            })), React.createElement("div", {
-              id: "aside",
-              className: "span3"
-            })))));
-          }));
-    }
   
-  }
+
       
     class products1 extends React.Component
     {     
+ 
       
       constructor(props) {
         super(props);
@@ -588,7 +372,8 @@ window.onload = function()
         if(id){
          
           reply_click(id);
-          localStorage.setItem("lastname", id);
+         
+         
          
         }
        
@@ -631,7 +416,8 @@ window.onload = function()
               className: "j2store-product-image   span12 "
             }, React.createElement("a", {
               href: "/joomla3.9/index.php/shopping/book1",
-              title: "book1"
+              title: "book1",
+              id:  dat.name
             }, React.createElement("img", {
               itemProp: "image",
               alt: "book1",
@@ -647,12 +433,7 @@ window.onload = function()
               itemProp: "url",
               id: dat.id,
               className: "status",
-              
-              
               onClick: this.handleClick,
-          
-              
-                  
               href: "file:///C:/Users/asayi/OneDrive/Skrivbord/examensarbete/react/index2.html",
               title: "book1"
             }, dat.name,)), React.createElement("div", {
@@ -753,65 +534,36 @@ window.onload = function()
     
 
   }
-         
-         
+
+
+
   
   
 
 
 
-    ReactDOM.render(
-       
-        React.createElement(navbar,),
-        document.getElementById('root'),
+ 
+  
 
-        
-    );
-    ReactDOM.render(
-       
 
-        React.createElement(carousell,),
-        document.getElementById('carosell')
-        
-    );
-    ReactDOM.render(
-       
 
-        React.createElement(footer,),
-        document.getElementById('footer')
-        
-    );
-    ReactDOM.render(
-       
-
-        React.createElement(sidebar,),
-        document.getElementById('sidebar')
-        
-    );
-    ReactDOM.render(
-       
-
-      React.createElement(products1,),
-      document.getElementById('container1')
-      
-  );
-  ReactDOM.render(
-       
-
-    React.createElement(produktview,),
-    document.getElementById('produktview')
+    ReactDOM.render( /*#__PURE__*/React.createElement("div", null, 
+    /*#__PURE__*/React.createElement(navbar, null), 
+    /*#__PURE__*/React.createElement(carousell, null), 
+    /*#__PURE__*/React.createElement(sidebar, null), 
+    /*#__PURE__*/React.createElement(products1, null), 
     
-);
-  
+    /*#__PURE__*/React.createElement(footer, null)), 
+    document.getElementById('root'));
 
   
-  
+    
 };
 function reply_click(id){
             
          
              
-
+  localStorage.setItem("lastname", id);
         
   document.getElementById('sidebar').style.display="none";
   document.getElementById('carosell').style.display="none";
@@ -826,5 +578,6 @@ function reply_click(id){
           
 
 }  
+
 
 

@@ -4,52 +4,49 @@ window.onload = function()
   
 
 {
+  
 
+  function navbar() {
+    
+    return  React.createElement("header", {
+      className: "p-3 bg-dark text-white"
+    }, React.createElement("div", {
+      className: "alert position-relative alert-danger",
+      role: "alert"
+      
+    }, "Bokrea p\xE5 15 kr"), React.createElement("div", {
+      className: "container"
+    }, React.createElement("div", {
+      className: "d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    }, React.createElement("a", {
+      href: "/",
+      
+      className: "d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+    }), React.createElement("ul", {
+      className: "nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+    }), React.createElement("div", {
+      className: "text-end"
+    }, React.createElement("button", {
+      type: "button",
+      id: "loginknapp",
+     
+      className: "btn btn-outline-light me-2"
+    }, "Login"), React.createElement("button", {
+      type: "button",
+      id: "loginknapp2",
+      
+      className: "btn btn-warning"
+    }, "Sign-up")))));
+  }
  
 
-    
 
-    class navbar extends React.Component
-    {
-        render()
-        {
-           
-            return React.createElement("header", {
-                className: "p-3 bg-dark text-white"
-              }, React.createElement("div", {
-                className: "alert position-relative alert-danger",
-                role: "alert"
-                
-              }, "Bokrea p\xE5 15 kr"), React.createElement("div", {
-                className: "container"
-              }, React.createElement("div", {
-                className: "d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-              }, React.createElement("a", {
-                href: "/",
-                
-                className: "d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-              }), React.createElement("ul", {
-                className: "nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-              }), React.createElement("div", {
-                className: "text-end"
-              }, React.createElement("button", {
-                type: "button",
-                id: "loginknapp",
-                
-                className: "btn btn-outline-light me-2"
-              }, "Login"), React.createElement("button", {
-                type: "button",
-                id: "loginknapp2",
-               
-                className: "btn btn-warning"
-              }, "Sign-up")))));
-              
-            
-        }
-    }
+
+
+
 
     
-
+   
     class footer extends React.Component
     {
         render()
@@ -184,7 +181,7 @@ window.onload = function()
       {
         name: "book11",
         id: "id11",
-        idprodukt: "id11i",
+        idprodukt: "id11",
         href: "file:///C:/Users/asayi/react/index2.html",
         img: "paolo.jpg",
         kr: "500kr"
@@ -194,32 +191,110 @@ window.onload = function()
 
     
   
-
-
-
-
-
     class produktview extends React.Component
     {
-        render()
+  
+      componentDidMount(){
+        var $this = $(ReactDOM.findDOMNode(this)); 
+        console.log($this);
+     
+
+        let str=localStorage.getItem("theData");
+
+        
+
+
+          let measurement=new Date();
+            measurement = measurement.getTime();
+
+        
+     
+              
+                    str="Start of textfile: \n";
+                
+               
+                
+              
+                    str=localStorage.getItem("theData");
+                  
+                    str+= measurement+"\n";
+    
+                  
+              
+    
+                // Increase counter and save data to local storage
+              
+                
+                localStorage.setItem("theData",str);
+               
+    
+    
+             
+    
+                // Reload page!
+                
+    
+               
+        
+      
+        
+      }
+      componentWillMount (){
+        var $this = $(ReactDOM.findDOMNode(this)); 
+        console.log($this);
+        
+        let str1=localStorage.getItem("theData1");
+
+        
+
+
+          let measurement1=new Date();
+            measurement1 = measurement1.getTime();
+
+        
+     
+              
+                    str1="Start of textfile: \n";
+                
+               
+                
+              
+                    str1=localStorage.getItem("theData1");
+                  
+                    str1+= measurement1+"\n";
+    
+                  
+              
+    
+                // Increase counter and save data to local storage
+              
+                
+                localStorage.setItem("theData1",str1);
+               
+    
+    
+             
+    
+                // Reload page!
+                
+      
+
+      }
+       
+
+      render()
         {
+          
           return React.createElement("div", {
             className: "productview",
             id: "productview"
           }, data1.map((dat, key) => {
-
-
-
-
-                   
-
-
             return React.createElement("div", {
               key: key,
               className: dat.name,
               id: dat.idprodukt
             }, React.createElement("div", {
-              id: "${dat.name}"
+              id: dat.name
             }, React.createElement("div", {
               className: "container"
             }, React.createElement("header", {
@@ -410,55 +485,34 @@ window.onload = function()
 
 
 
-
-    ReactDOM.render(
-       
-        React.createElement(navbar,),
-        document.getElementById('root'),
-
-        
-    );
-
-    ReactDOM.render(
-       
-
-        React.createElement(footer,),
-        document.getElementById('footer')
-        
-    );
-
-  ReactDOM.render(
-       
-
-    React.createElement(produktview,),
-    document.getElementById('produktview')
+  ReactDOM.render( 
     
-);
-  
+    /*#__PURE__*/React.createElement("div", null,
+     /*#__PURE__*/React.createElement(navbar, null),
+   /*#__PURE__*/React.createElement(produktview, null),
+    /*#__PURE__*/React.createElement(footer, null)), 
+    document.getElementById('root'));
 
-var id1 = localStorage.getItem("lastname");
-  
-document.getElementById(id1).style.display="block";
+
+
+var id50 = localStorage.getItem("lastname");
+document.getElementById(id50).style.display = "block";
+
+
   
 };
 
 
 
-function reply_click(id){
+
+function abbo(){
             
          
-
-            
-
-        
-  console.log("done", id);
+             
+alert("done");
   
-
- 
-
-  
-        
+          console.log("done");
           
           
 
-}  
+} 
