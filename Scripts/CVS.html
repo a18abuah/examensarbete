@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="Böcker()">Generera</button>
+
+        <p id="Böcker"></p>
+
+        <script>
+            function Böcker() {
+                var Maxböcker = 100;
+                for (var i = 0; i < Maxböcker; i++) {
+                    var id = "" + i;
+                    var text = "";
+                    var idprodukt = " "+ i;
+                    var name = "book" + i;
+                    var href = "file:///C:/Users/asayi/react/index2.html"
+                    var img = "paolo.jpg"
+                    var kr = Math.floor(Math.random() * 201);
+                text +=
+                        name +
+                        "," +
+                        id +
+                        "," +
+                        idprodukt +
+                        "," +
+                        href +
+                        "," +
+                        img +
+                        "," +
+                        kr +                     
+                        "<br>";
+                    document.getElementById("Böcker").innerHTML += text;
+                }
+            }
+        </script>
+    </body>
+</html>
