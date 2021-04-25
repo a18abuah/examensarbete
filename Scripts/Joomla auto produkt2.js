@@ -13,12 +13,12 @@
 
 
 
-    var imgage1 = "http://localhost/joomla3.9/images/Fitz-Porsche-Ultimate-Series_700x700.jpg";
-    var image1 = "images/Fitz-Porsche-Ultimate-Series_700x700.jpg"
-    document.getElementById('jform_image_thumb_image').value = image1;
-    document.getElementById('jform_image_main_image').value = image1;
-    document.getElementById('input-thumb-image').src = imgage1;
-    document.getElementById('input-main-image').src = imgage1;
-    var test = document.getElementById('input-main-image').src;
-    Joomla.submitbutton('article.save2new');
+            var imgage1 = "http://localhost/joomla3.9/images/paolo.jpg";
+            var image1 = "images/paolo.jpg"
+            document.getElementById('jform_image_thumb_image').value = image1;
+            document.getElementById('jform_image_main_image').value = image1;
+            document.getElementById('input-thumb-image').src = imgage1;
+            document.getElementById('input-main-image').src = imgage1;
+           var test =   document.getElementById('input-main-image').src;
+             Joomla.submitbutton('article.save2new');
 })();
